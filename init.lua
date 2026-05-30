@@ -11,3 +11,4 @@ require('config.autocmds')
 require('config.diagnostics')
 require('config.plugins')
 require('config.lsp')
+
