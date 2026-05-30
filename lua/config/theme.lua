@@ -217,3 +217,4 @@ vim.api.nvim_create_user_command('ThemeReload', function()
 end, { desc = 'Reload Neovim theme from ~/.local/state/theme-*' })
 
 return M
+
