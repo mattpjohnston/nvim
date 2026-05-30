@@ -62,7 +62,7 @@ nvim
 - `:Format` — format current buffer/range using conform.nvim, falling back to LSP.
 - `:TreesitterInstallConfigured` — install the configured Tree-sitter parsers.
 - `:ThemeStatus` — show the detected desktop theme family, mode and Neovim colourscheme.
-- `:ThemeReload` — reapply the Neovim theme from the state files.
+- `:ThemeReload` — reapply the Neovim theme from the desktop state files.
 - `:lua vim.pack.update()` — update plugins managed by `vim.pack`.
 
 ## Theme switching
