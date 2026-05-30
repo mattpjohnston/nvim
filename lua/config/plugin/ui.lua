@@ -1,0 +1,33 @@
+require('mini.clue').setup({
+  delay = 500,
+  triggers = {
+    { mode = 'n', keys = '<leader>' },
+    { mode = 'x', keys = '<leader>' },
+    { mode = 'n', keys = 'g' },
+    { mode = 'x', keys = 'g' },
+    { mode = 'n', keys = '[' },
+    { mode = 'n', keys = ']' },
+    { mode = 'n', keys = 'z' },
+    { mode = 'x', keys = 'z' },
+    { mode = 'n', keys = '<C-w>' },
+  },
+  clues = {
+    { mode = 'n', keys = '<leader>f', desc = '+find/search' },
+    { mode = 'n', keys = '<leader>b', desc = '+buffers' },
+    { mode = 'n', keys = '<leader>g', desc = '+git' },
+    { mode = 'n', keys = '<leader>gh', desc = '+git hunk' },
+    { mode = 'n', keys = '<leader>h', desc = '+harpoon' },
+    { mode = 'n', keys = '<leader>l', desc = '+language/LSP' },
+    { mode = 'n', keys = '<leader>q', desc = '+quickfix' },
+    { mode = 'n', keys = '<leader>t', desc = '+toggles' },
+    require('mini.clue').gen_clues.builtin_completion(),
+    require('mini.clue').gen_clues.g(),
+    require('mini.clue').gen_clues.marks(),
+    require('mini.clue').gen_clues.registers(),
+    require('mini.clue').gen_clues.windows(),
+    require('mini.clue').gen_clues.z(),
+  },
+  window = {
+    config = { width = 'auto' },
+  },
+})
