@@ -32,3 +32,4 @@ require('config.plugin.git')
 require('config.plugin.completion')
 require('config.plugin.formatting')
 require('config.plugin.treesitter')
+
